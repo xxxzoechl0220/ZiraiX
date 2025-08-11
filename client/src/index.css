@@ -1,0 +1,237 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(0, 0%, 100%);
+  --foreground: hsl(240, 20%, 15%);
+  --muted: hsl(50, 50%, 96%);
+  --muted-foreground: hsl(240, 5%, 50%);
+  --popover: hsl(0, 0%, 100%);
+  --popover-foreground: hsl(240, 20%, 15%);
+  --card: hsl(0, 0%, 100%);
+  --card-foreground: hsl(240, 20%, 15%);
+  --border: hsl(240, 20%, 90%);
+  --input: hsl(240, 20%, 92%);
+  --primary: hsl(280, 85%, 65%);
+  --primary-foreground: hsl(0, 0%, 100%);
+  --secondary: hsl(50, 95%, 65%);
+  --secondary-foreground: hsl(240, 20%, 15%);
+  --accent: hsl(180, 75%, 60%);
+  --accent-foreground: hsl(240, 20%, 15%);
+  --destructive: hsl(0, 75%, 60%);
+  --destructive-foreground: hsl(0, 0%, 100%);
+  --ring: hsl(280, 85%, 65%);
+  --radius: 1rem;
+  --bg-soft: hsl(50, 100%, 98%);
+  --purple: hsl(280, 85%, 65%);
+  --pink: hsl(330, 85%, 70%);
+  --green: hsl(150, 75%, 55%);
+  --orange: hsl(30, 95%, 65%);
+  --blue: hsl(220, 85%, 65%);
+  --teal: hsl(180, 75%, 60%);
+  
+  /* Zubo Brand Colors */
+  --zubo-primary: hsl(270, 100%, 68%);
+  --zubo-purple-light: hsl(268, 89%, 84%);
+  --zubo-purple-dark: hsl(271, 100%, 58%);
+  --zubo-blue: hsl(210, 100%, 66%);
+  --zubo-blue-light: hsl(205, 100%, 85%);
+  --zubo-green: hsl(142, 76%, 36%);
+  --zubo-green-light: hsl(142, 76%, 92%);
+  --zubo-orange: hsl(28, 100%, 67%);
+  --zubo-orange-light: hsl(28, 100%, 94%);
+  --zubo-red: hsl(0, 84%, 60%);
+  --zubo-red-light: hsl(0, 84%, 94%);
+  --zubo-gray-900: hsl(210, 14%, 15%);
+  --zubo-gray-700: hsl(210, 10%, 45%);
+  --zubo-gray-500: hsl(212, 8%, 65%);
+  --zubo-gray-300: hsl(220, 13%, 85%);
+  --zubo-gray-100: hsl(220, 13%, 95%);
+  --zubo-gray-50: hsl(220, 14%, 98%);
+}
+
+.dark {
+  --background: hsl(240, 10%, 3.9%);
+  --foreground: hsl(0, 0%, 98%);
+  --muted: hsl(240, 3.7%, 15.9%);
+  --muted-foreground: hsl(240, 5%, 64.9%);
+  --popover: hsl(240, 10%, 3.9%);
+  --popover-foreground: hsl(0, 0%, 98%);
+  --card: hsl(240, 10%, 3.9%);
+  --card-foreground: hsl(0, 0%, 98%);
+  --border: hsl(240, 3.7%, 15.9%);
+  --input: hsl(240, 3.7%, 15.9%);
+  --primary: hsl(249, 83%, 67%);
+  --primary-foreground: hsl(211, 100%, 99%);
+  --secondary: hsl(240, 3.7%, 15.9%);
+  --secondary-foreground: hsl(0, 0%, 98%);
+  --accent: hsl(240, 3.7%, 15.9%);
+  --accent-foreground: hsl(0, 0%, 98%);
+  --destructive: hsl(0, 62.8%, 30.6%);
+  --destructive-foreground: hsl(0, 0%, 98%);
+  --ring: hsl(240, 4.9%, 83.9%);
+  --radius: 0.5rem;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  }
+
+  .font-nunito {
+    font-family: 'Nunito', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  }
+}
+
+@layer utilities {
+  .bg-gradient-sparkful {
+    background: linear-gradient(135deg, hsl(280, 85%, 65%) 0%, hsl(50, 95%, 65%) 35%, hsl(180, 75%, 60%) 70%, hsl(330, 85%, 70%) 100%);
+  }
+  
+  .bg-gradient-primary {
+    background: linear-gradient(135deg, hsl(280, 85%, 65%) 0%, hsl(260, 85%, 75%) 100%);
+  }
+  
+  .bg-gradient-secondary {
+    background: linear-gradient(135deg, hsl(50, 95%, 65%) 0%, hsl(45, 95%, 75%) 100%);
+  }
+  
+  .bg-gradient-accent {
+    background: linear-gradient(135deg, hsl(180, 75%, 60%) 0%, hsl(170, 75%, 70%) 100%);
+  }
+  
+  .bg-gradient-pink {
+    background: linear-gradient(135deg, hsl(330, 85%, 70%) 0%, hsl(320, 85%, 80%) 100%);
+  }
+  
+  .bg-gradient-fun {
+    background: linear-gradient(45deg, hsl(280, 85%, 65%) 0%, hsl(330, 85%, 70%) 25%, hsl(50, 95%, 65%) 50%, hsl(180, 75%, 60%) 75%, hsl(220, 85%, 65%) 100%);
+  }
+  
+  .text-gradient-primary {
+    background: linear-gradient(135deg, hsl(280, 85%, 65%) 0%, hsl(50, 95%, 65%) 50%, hsl(180, 75%, 60%) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .text-gradient-fun {
+    background: linear-gradient(45deg, hsl(280, 85%, 65%) 0%, hsl(330, 85%, 70%) 33%, hsl(50, 95%, 65%) 66%, hsl(180, 75%, 60%) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .animation-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .animation-float-delayed {
+    animation: float 6s ease-in-out infinite 2s;
+  }
+
+  .animation-bounce-soft {
+    animation: bounce-soft 3s ease-in-out infinite;
+  }
+
+  .animation-pulse-soft {
+    animation: pulse-soft 4s ease-in-out infinite;
+  }
+  
+  .blob-shape {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    animation: morph 8s ease-in-out infinite;
+  }
+  
+  .gradient-purple {
+    background: linear-gradient(135deg, var(--zubo-primary) 0%, var(--zubo-purple-light) 100%);
+  }
+  
+  .gradient-purple-light {
+    background: linear-gradient(135deg, var(--zubo-primary) 0%, var(--zubo-purple-light) 50%, var(--zubo-gray-50) 100%);
+  }
+
+  .gradient-hero {
+    background: linear-gradient(135deg, var(--zubo-gray-50) 0%, var(--zubo-blue-light) 30%, var(--zubo-purple-light) 70%, var(--zubo-gray-50) 100%);
+  }
+
+  .gradient-section {
+    background: linear-gradient(180deg, transparent 0%, var(--zubo-gray-50) 50%, transparent 100%);
+  }
+  
+  .card-hover {
+    transition: all 0.3s ease;
+  }
+  
+  .card-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px hsla(261, 100%, 67%, 0.2);
+  }
+  
+  .section-spacing {
+    @apply py-20 lg:py-32;
+  }
+  
+  .container-padding {
+    @apply px-6 lg:px-8;
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes bounce-soft {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes pulse-soft {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.05);
+  }
+}
+
+@keyframes morph {
+  0% { border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; }
+  50% { border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%; }
+  100% { border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
