@@ -1,7 +1,7 @@
-import { useState } from 'react';
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { useToast } from '@/hooks/use-toast';
+import React, { useState } from 'react';
+import { Button } from './ui/button';
+import { Input } from './ui/input';
+import { useToast } from '../hooks/use-toast';
 import { Mail, Send, ArrowRight } from 'lucide-react';
 
 export function Newsletter() {
@@ -44,7 +44,7 @@ export function Newsletter() {
             </h2>
             
             <p className="text-lg text-gray-300 max-w-xl">
-              获取关于产品更新、技术趋势的第一手咨询，掌握每一次创新动态
+              获取关于产品更新、技术趋势的第一手咨询，掌握每一次更新动态
             </p>
           </div>
 

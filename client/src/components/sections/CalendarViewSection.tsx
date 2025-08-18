@@ -1,3 +1,4 @@
+import React from 'react';
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 import { Calendar, Clock, Eye, Grid3X3 } from "lucide-react";

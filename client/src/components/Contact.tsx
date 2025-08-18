@@ -1,14 +1,15 @@
 import { useState } from 'react';
-import { Button } from '@/components/ui/button';
-import { Card, CardContent } from '@/components/ui/card';
-import { Input } from '@/components/ui/input';
-import { Label } from '@/components/ui/label';
-import { Textarea } from '@/components/ui/textarea';
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
-import { useToast } from '@/hooks/use-toast';
+import React from 'react';
+import { Button } from './ui/button';
+import { Card, CardContent } from './ui/card';
+import { Input } from './ui/input';
+import { Label } from './ui/label';
+import { Textarea } from './ui/textarea';
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from './ui/select';
+import { useToast } from '../hooks/use-toast';
 import { Mail, Clock, MessageCircle, Send } from 'lucide-react';
 import { SiX, SiInstagram, SiDiscord, SiReddit } from 'react-icons/si';
-import { Translation } from '@/lib/i18n';
+import { Translation } from '../lib/i18n';
 
 interface ContactProps {
   translation: Translation;

@@ -1,7 +1,8 @@
 import { useState } from 'react';
-import { Language, languageNames, languageFlags } from '@/lib/i18n';
-import { Button } from '@/components/ui/button';
-import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from '@/components/ui/dropdown-menu';
+import { Language, languageNames, languageFlags } from '../lib/i18n';
+import React from 'react';
+import { Button } from './ui/button';
+import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from './ui/dropdown-menu';
 import { ChevronDown } from 'lucide-react';
 
 interface LanguageSwitcherProps {

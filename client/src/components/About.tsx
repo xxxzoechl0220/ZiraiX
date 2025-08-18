@@ -1,6 +1,7 @@
-import { Card, CardContent } from '@/components/ui/card';
+import React from 'react';
+import { Card, CardContent } from './ui/card';
 import { Lightbulb, Users, Rocket } from 'lucide-react';
-import { Translation } from '@/lib/i18n';
+import { Translation } from '../lib/i18n';
 
 interface AboutProps {
   translation: Translation;

@@ -1,3 +1,4 @@
+import React from 'react';
 import { motion } from "framer-motion";
 import { Download, ArrowRight, DollarSign, Shield, Users, Star, Play, Calendar } from "lucide-react";
 

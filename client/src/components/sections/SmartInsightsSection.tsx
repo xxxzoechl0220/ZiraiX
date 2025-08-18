@@ -1,3 +1,4 @@
+import React from 'react';
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 import { TrendingUp, PieChart, Target, BarChart3, Calculator, Lightbulb } from "lucide-react";

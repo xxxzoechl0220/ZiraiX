@@ -1,7 +1,8 @@
-import { Badge } from '@/components/ui/badge';
-import { Progress } from '@/components/ui/progress';
-import { Card, CardContent } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
+import { Badge } from './ui/badge';
+import { Progress } from './ui/progress';
+import { Card, CardContent } from './ui/card';
+import React from 'react';
+import { Button } from './ui/button';
 import { 
   CreditCard, 
   Tv, 
@@ -12,7 +13,7 @@ import {
   ArrowRight,
   Eye
 } from 'lucide-react';
-import { Translation } from '@/lib/i18n';
+import { Translation } from '../lib/i18n';
 import { SiApple, SiAndroid } from 'react-icons/si';
 import { Link } from 'wouter';
 
