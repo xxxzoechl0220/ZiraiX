@@ -1,8 +1,8 @@
-import { useState } from 'react';
-import { Button } from '@/components/ui/button';
-import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
+import React, { useState } from 'react';
+import { Button } from './ui/button';
+import { Sheet, SheetContent, SheetTrigger } from './ui/sheet';
 import { Menu } from 'lucide-react';
-import { Language, Translation } from '@/lib/i18n';
+import { Language, Translation } from '../lib/i18n';
 import { LanguageSwitcher } from './LanguageSwitcher';
 import { Link, useLocation } from 'wouter';
 

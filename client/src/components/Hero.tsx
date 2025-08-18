@@ -1,6 +1,7 @@
-import { Button } from '@/components/ui/button';
+import React from 'react';
+import { Button } from './ui/button';
 import { Rocket, Info, CreditCard, Tv, Dumbbell, Clock, TrendingUp, Briefcase, CheckCircle, Code, Lightbulb, TimerIcon } from 'lucide-react';
-import { Translation } from '@/lib/i18n';
+import { Translation } from '../lib/i18n';
 
 interface HeroProps {
   translation: Translation;

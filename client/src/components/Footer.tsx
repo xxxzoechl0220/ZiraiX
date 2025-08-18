@@ -1,5 +1,6 @@
+import React from 'react';
 import { SiX, SiInstagram, SiDiscord, SiReddit, SiThreads, SiSinaweibo, SiXiaohongshu } from 'react-icons/si';
-import { Translation } from '@/lib/i18n';
+import { Translation } from '../lib/i18n';
 import { Link } from 'wouter';
 
 interface FooterProps {
@@ -69,11 +70,11 @@ export function Footer({ translation }: FooterProps) {
                     <div
                       key={index}
                       className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center text-gray-500 cursor-not-allowed relative group"
-                      title={social.note}
+                      title="即将上线"
                     >
                       <IconComponent />
                       <div className="absolute bottom-full mb-2 left-1/2 transform -translate-x-1/2 bg-gray-900 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">
-                        {social.note}
+                        即将上线
                       </div>
                     </div>
                   );

@@ -1,3 +1,4 @@
+import React from 'react';
 import HeroSection from './sections/HeroSection';
 import TrackingFeatureSection from './sections/TrackingFeatureSection';
 import SmartInsightsSection from './sections/SmartInsightsSection';
